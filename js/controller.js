@@ -143,12 +143,6 @@ function trash() {
     itemOperations.markUnMark(id);
     showTotal();
     let tr = this.parentNode.parentNode;
-    /*if(tr.className){
-    tr.className = '';
-    }
-    else{
-        tr.className = 'alert-danger';
-    }*/
     tr.classList.toggle('alert-danger');
     console.log("I am Trash ", this.getAttribute('data-itemid'))
 }
